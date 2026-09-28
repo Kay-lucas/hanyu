@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>하루 한 단어 · 汉语</title>
+  <meta name="description" content="하루에 중국어 단어 하나, 천천히 쌓아가는 학습 앱">
+  <meta name="theme-color" content="#faf6ef" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1b1917" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="하루한단어">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="brand-han">汉</span> 하루 한 단어</div>
+    <div class="streak" id="streak" title="연속 학습일"></div>
+  </header>
+
+  <main id="view" aria-live="polite"></main>
+
+  <nav class="tabs" aria-label="메뉴">
+    <a href="#/today" data-tab="today"><span class="tab-ico">今</span>오늘</a>
+    <a href="#/review" data-tab="review"><span class="tab-ico">复</span>복습</a>
+    <a href="#/list" data-tab="list"><span class="tab-ico">词</span>단어장</a>
+  </nav>
+
+  <script src="words.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
